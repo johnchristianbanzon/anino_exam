@@ -287,13 +287,13 @@ namespace DanielLochner.Assets.SimpleScrollSnap
         {
             if (NumberOfPanels == 0) return;
 
-            HandleOcclusionCulling();
+            //HandleOcclusionCulling();
             HandleSelectingAndSnapping();
             HandleInfiniteScrolling();
-            HandleTransitionEffects();
-            HandleSwipeGestures();
+            //HandleTransitionEffects();
+          //  HandleSwipeGestures();
 
-            GetVelocity();
+           // GetVelocity();
         }
         
         public void OnPointerDown(PointerEventData eventData)
