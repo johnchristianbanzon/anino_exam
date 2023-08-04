@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "685393082243",
+    "project_id": "aninoexam",
+    "storage_bucket": "aninoexam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685393082243:android:99ff03ada5eca437ae68b6",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.AninoExam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685393082243-c53mfpg2il2jlm1pt8h3p39eltc171nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFbcEQkvN8qE03UrVCYvLs8AyqNPgjLF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685393082243-c53mfpg2il2jlm1pt8h3p39eltc171nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

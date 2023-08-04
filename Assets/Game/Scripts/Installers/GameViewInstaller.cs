@@ -6,6 +6,7 @@ public class GameViewInstaller : MonoInstaller<GameViewInstaller>
     public override void InstallBindings()
     {
         ModelInstaller.Install(Container);
-        //Container.Bind<PopUpView>().FromComponentOn(_popUPView.gameObject).AsCached();
+        
+        Container.Bind<MainThreadHandler>().FromComponentInHierarchy().AsCached();
     }
 }
