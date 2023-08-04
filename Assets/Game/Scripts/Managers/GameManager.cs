@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : IGameManager
 {
-    // Start is called before the first frame update
-    void Start()
+    private SymbolPayoutData _symbolPayoutData;
+    private PayoutLineData _payoutLineData;
+
+    public void SetRemoteConfigData(SymbolPayoutData symbolPayoutData, PayoutLineData payoutLineData)
     {
-        
+        _symbolPayoutData = symbolPayoutData;
+        _payoutLineData = payoutLineData;
     }
 
-    // Update is called once per frame
-    void Update()
+    public SymbolPayoutData GetSymbolPayoutData()
     {
-        
+        return _symbolPayoutData;
+    }
+
+    public PayoutLineData GetPayoutLineData()
+    {
+        return _payoutLineData;
     }
 }

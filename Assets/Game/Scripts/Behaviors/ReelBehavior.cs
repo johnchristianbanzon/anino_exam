@@ -9,6 +9,8 @@ public class ReelBehavior : MonoBehaviour
     [SerializeField]
     private ScrollRect _scrollRect;
     [SerializeField]
+    private SymbolBehavior[] _symbolBehaviors;
+    [SerializeField]
     private SimpleScrollSnap _simpleScrollSnap;
     private bool _startedSpin;
     private int _reelNumber = 0;
@@ -16,13 +18,15 @@ public class ReelBehavior : MonoBehaviour
     public void SetReelNumber(int number)
     {
         _reelNumber = number;
+        for (int i = 0; i < _symbolBehaviors.Length; i++)
+        {
+            var symbol = UnityEngine.Random.Range(0, 6);
+            _symbolBehaviors[i].SetSymbol(symbol);
+        }
     }
 
     public void Spin()
     {
-        //Debug.Log("Random.Range(-2500, - 5000) * Vector2.up :" + Random.Range(-2500, -5000) * Vector2.up);
-        //_simpleScrollSnap.Velocity = (-3000 * Vector2.up);
-        //_simpleScrollSnap.GoToPanel(1500);
         StartCoroutine("StopReel");
         _startedSpin = true;
     }
