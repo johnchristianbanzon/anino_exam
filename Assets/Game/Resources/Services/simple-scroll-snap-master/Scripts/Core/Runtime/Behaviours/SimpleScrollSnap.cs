@@ -291,9 +291,9 @@ namespace DanielLochner.Assets.SimpleScrollSnap
             HandleSelectingAndSnapping();
             HandleInfiniteScrolling();
             //HandleTransitionEffects();
-          //  HandleSwipeGestures();
+            HandleSwipeGestures();
 
-           // GetVelocity();
+            GetVelocity();
         }
         
         public void OnPointerDown(PointerEventData eventData)
@@ -581,6 +581,7 @@ namespace DanielLochner.Assets.SimpleScrollSnap
                 {
                     GoToPanel(nearestPanel);
                 }
+               
             }
         }
         private void SnapToPanel()
@@ -609,6 +610,7 @@ namespace DanielLochner.Assets.SimpleScrollSnap
         public void GoToPanel(int panelNumber)
         {
             CenteredPanel = panelNumber;
+            SelectedPanel = panelNumber;
             isSelected = true;
             onPanelSelected.Invoke(SelectedPanel);
 
@@ -627,6 +629,7 @@ namespace DanielLochner.Assets.SimpleScrollSnap
             if (nearestPanel != 0)
             {
                 GoToPanel(nearestPanel - 1);
+                
             }
             else
             {
@@ -643,6 +646,7 @@ namespace DanielLochner.Assets.SimpleScrollSnap
         public void GoToNextPanel()
         {
             int nearestPanel = GetNearestPanel();
+
             if (nearestPanel != (NumberOfPanels - 1))
             {
                 GoToPanel(nearestPanel + 1);
