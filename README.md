@@ -12,6 +12,7 @@ Notes:
 - DID NOT INCLUDE FIREBASE IN PROJECT REPOSITORY, PLEASE PREPARE CONFIG BEFOREHAND.
 - Preferred resolution 2160x1080 (was not able to optimize)
 - Build added as external links because Builds are forced to be ignored.
+- Was unable to test with devices properly (no test device as of the moment) 
 
 
 Main Core architecture:
