@@ -82,7 +82,8 @@ public class GameManager : IGameManager
     public void IncreaseDecreaseBet(bool isIncrease)
     {
         //magic number 100 for bet default
-        _currentBet += 1;
+    
+        _currentBet += isIncrease?1:-1;
         if(_currentBet > 20)
         {
             _currentBet = 1;
