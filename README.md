@@ -3,7 +3,9 @@
 Links available to download
 
 Android(Deploygate): https://dply.me/wryxs5
+
 Drive(APK): https://drive.google.com/file/d/1Xgz0J3LKfY3cDIbRN7_YVRp6Ft0vFmKQ/view?usp=sharing
+
 IOS: 
 
 Documentation in sheets: https://docs.google.com/spreadsheets/d/1qZWIL7M0UeVhMBX0bN71L9xGWLAgIvUnL5Zp5lJBMAo/edit?usp=sharing
@@ -25,7 +27,9 @@ Points of interest:
 
 
 Points for improvement:
+
 *App
+
 - Wonky animation, needed some more time for tweaking
 - Scatter function (wanted)
 - Improvement in spinning
